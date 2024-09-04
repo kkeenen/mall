@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    qos-enable: false
+    name: product-module
+  registry:
+    address: zookeeper://127.0.0.1:2181  # 注册中心地址
+  consumer:
+    timeout: 3000  # 设置消费者的超时时间
+  protocol:
+    name: dubbo
+    port: 28888
